@@ -1,0 +1,11 @@
+<div class="container" style="width: 25%">
+  <br/>
+    <select id="selectPessoa" 
+            class="form-control" 
+            [(ngModel)]="currentPessoa"
+            (change)="updatePessoa(currentPessoa)">
+        <option *ngFor="let pessoa of listaPessoas" [ngValue]= "pessoa">
+                {{pessoa.codigo}} - {{pessoa.nome}}
+        </option>
+  </select>
+</div>

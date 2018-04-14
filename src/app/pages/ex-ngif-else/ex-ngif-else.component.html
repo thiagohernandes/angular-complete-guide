@@ -1,0 +1,8 @@
+<div class="container">
+  <span *ngIf="valor; else templateElse">
+    <h1>if..</h1>
+  </span>  
+  <ng-template #templateElse>
+    <h1>else..</h1>
+  </ng-template>
+</div>

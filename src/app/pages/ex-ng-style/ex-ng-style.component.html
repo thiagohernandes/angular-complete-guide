@@ -1,0 +1,16 @@
+<div class="container">
+  <span [ngStyle]="{color: 'blue'}">
+    <h1>style...</h1> 
+  </span>
+  <span>
+  <input type="number" [(ngModel)]="numero" (keyup)="changeNumber(numero)">
+  <button (click)="changeNumber(numero)">Apply number</button>
+  </span>
+  <span [ngStyle]="{color: getColorByValor()}">
+      <h1>style...function by valor</h1> 
+      <h3>{{msgNumber()}}</h3>
+  </span>
+  <span *ngIf="numero == 10" [ngClass]="{meuStyle : numero == 10}">
+     Class.. número igual a 10!
+  </span>
+</div>

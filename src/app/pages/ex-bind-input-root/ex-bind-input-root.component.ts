@@ -15,8 +15,8 @@ export class ExBindInputRootComponent implements OnInit {
 
   listaPessoas:IPessoa[] = [];
   pessoaObject:IPessoa = {codigo:null,nome:null};
-  msgEmiter:string;
-  objEmiter:IPessoa;
+  msgEmiter:string; // mesmo nome e tipo do component @Output emiter
+  objEmiter:IPessoa;  // mesmo nome e tipo do component @Output emiter
 
   constructor(private servicePessoa:ExPessoaService) { }
 

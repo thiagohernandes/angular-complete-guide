@@ -33,13 +33,27 @@ export class ExSelectLoadDataComponent implements OnInit {
       codigo: 3,
       nome:'Ciclano'
     }
+    let pessoa4 = {
+      codigo: 4,
+      nome:'Delano'
+    }
+    let pessoa5 = {
+      codigo: 5,
+      nome:'Filisbino'
+    }
     this.listaPessoas[0] = pessoa1;
     this.listaPessoas[1] = pessoa2;
     this.listaPessoas[2] = pessoa3;
+    this.listaPessoas[3] = pessoa4;
+    this.listaPessoas[4] = pessoa5;
   }
 
   updatePessoa(obj){
     console.log(obj);
+  }
+
+  changeValorSelect(){
+    this.currentPessoa = this.listaPessoas[2];
   }
 
 }

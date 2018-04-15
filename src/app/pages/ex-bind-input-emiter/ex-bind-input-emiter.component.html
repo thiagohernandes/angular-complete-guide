@@ -1,0 +1,8 @@
+<div class="container">
+    <input type="text"[(ngModel)]="obj.msg"> <br/>
+    <button (click)="msgRootComp(obj)">Emiter msg Root Component</button>
+    <hr/>
+    <input type="number"[(ngModel)]="objPessoa.codigo"> <br/>
+    <input type="text"[(ngModel)]="objPessoa.nome"> <br/>
+    <button (click)="objAddEmiter(objPessoa)">Emiter object Root Component</button>
+</div>

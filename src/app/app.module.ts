@@ -14,6 +14,8 @@ import { ExBindInputChildComponent } from './pages/ex-bind-input-child/ex-bind-i
 import { ExBindInputRootComponent } from './pages/ex-bind-input-root/ex-bind-input-root.component';
 import { ExPessoaService } from './services/ex-pessoa.service';
 import { ExBindInputEmiterComponent } from './pages/ex-bind-input-emiter/ex-bind-input-emiter.component';
+import { MasterListComponent } from './pages/master-list/master-list.component';
+import { DetailListComponent } from './pages/detail-list/detail-list.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ExBindInputEmiterComponent } from './pages/ex-bind-input-emiter/ex-bind
     ExBindInputChildComponent,
     ExBindInputRootComponent,
     ExBindInputEmiterComponent,
+    MasterListComponent,
+    DetailListComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<div style="text-align:center">
+    <br/>
+	  <label>
+		  <input type="file" (change)="selectFile($event)">
+		</label>
+    <button [disabled]="!selectedFiles" (click)="upload()">Upload</button>
+    <br/>
+    <img *ngIf="uploading" style="text-align: center" src="assets\imagens\uploading.gif" width="80px" height="80px">
+</div>

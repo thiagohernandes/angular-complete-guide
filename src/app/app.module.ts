@@ -16,6 +16,9 @@ import { ExPessoaService } from './services/ex-pessoa.service';
 import { ExBindInputEmiterComponent } from './pages/ex-bind-input-emiter/ex-bind-input-emiter.component';
 import { MasterListComponent } from './pages/master-list/master-list.component';
 import { DetailListComponent } from './pages/detail-list/detail-list.component';
+import { UploadFormComponent } from './pages/upload-form/upload-form.component';
+import { UploadService } from './services/upload.service';
+import { HttpClientModule } from '@angular/common/http'; // Upload
 
 @NgModule({
   declarations: [
@@ -28,13 +31,16 @@ import { DetailListComponent } from './pages/detail-list/detail-list.component';
     ExBindInputEmiterComponent,
     MasterListComponent,
     DetailListComponent,
+    UploadFormComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule // Upload
   ],
   providers: [
-    ExPessoaService
+    ExPessoaService,
+    UploadService
   ],
   bootstrap: [AppComponent]
 })

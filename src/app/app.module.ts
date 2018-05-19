@@ -18,7 +18,8 @@ import { MasterListComponent } from './pages/master-list/master-list.component';
 import { DetailListComponent } from './pages/detail-list/detail-list.component';
 import { UploadFormComponent } from './pages/upload-form/upload-form.component';
 import { UploadService } from './services/upload.service';
-import { HttpClientModule } from '@angular/common/http'; // Upload
+import { HttpClientModule } from '@angular/common/http';
+import { DownloadFormComponent } from './pages/download-form/download-form.component'; // Upload
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http'; // Upload
     MasterListComponent,
     DetailListComponent,
     UploadFormComponent,
+    DownloadFormComponent,
   ],
   imports: [
     BrowserModule,

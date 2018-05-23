@@ -1,6 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { Component } from '@angular/core';
 
 // ************* ngModel *************
 import { FormsModule } from '@angular/forms'; 
@@ -20,6 +18,7 @@ import { UploadFormComponent } from './pages/upload-form/upload-form.component';
 import { UploadService } from './services/upload.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DownloadFormComponent } from './pages/download-form/download-form.component'; // Upload
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, Component }  from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -44,6 +43,7 @@ import { DownloadFormComponent } from './pages/download-form/download-form.compo
     ExPessoaService,
     UploadService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

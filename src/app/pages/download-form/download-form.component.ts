@@ -6,7 +6,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   templateUrl: './download-form.component.html'
 })
 export class DownloadFormComponent implements OnInit {
-
+  title = 'app';
   name = 'Angular 5';
   fileUrl;
   constructor(private sanitizer: DomSanitizer) {  }

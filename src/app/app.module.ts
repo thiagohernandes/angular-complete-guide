@@ -19,6 +19,7 @@ import { UploadService } from './services/upload.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DownloadFormComponent } from './pages/download-form/download-form.component'; // Upload
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, Component }  from '@angular/core';
+import { LetrasComponent } from './pages/letras/letras.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, Component }  from '
     DetailListComponent,
     UploadFormComponent,
     DownloadFormComponent,
+    LetrasComponent,
   ],
   imports: [
     BrowserModule,

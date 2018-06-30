@@ -1,3 +1,9 @@
+<app-letras></app-letras>
+<br/>
+<app-letras></app-letras>
+<br/>
+<app-letras></app-letras>
+
 Exemplo sem @Input()
 <div class="container">
     <span *ngFor="let pessoa of listaPessoas">
@@ -11,8 +17,8 @@ Com @Input()
     </app-ex-bind-input-child>
 </div>
 <hr/>
-Com @Output() 2   
-<div class="container">         
+Com @Output() 2
+<div class="container">
    <!-- <app-ex-bind-input-emiter (objEmiter) = "getEmiterChildObj($event)"></app-ex-bind-input-emiter> -->
     <app-ex-bind-input-emiter (msgEmiter) = "getEmiterChild($event)" (objEmiter) = "getEmiterChildObj($event)" ></app-ex-bind-input-emiter>
     <span>

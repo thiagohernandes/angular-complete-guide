@@ -1,0 +1,12 @@
+<div>
+  <form>
+  <h3>[Letras]</h3>
+  <span *ngFor="let letra of _letras">
+        [ {{letra}} ] <br/>
+  </span>
+  <h4 *ngIf="_letras.length == 0">Sem letras adicionadas!</h4>
+  <hr>
+  <input type="text" [(ngModel)]="obj.letra" [ngModelOptions]="{standalone: true}">
+  <button (click)="addLetras(obj.letra)">Adicionar letra</button>
+  </form>
+</div>

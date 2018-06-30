@@ -5,11 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class LetrasService {
 
-  _letras:string[] = [];
+  _letras: string[] = [];
 
   constructor() { }
 
-  addLetra(letra){
+  addLetra(letra) {
     this._letras.push(letra);
   }
+
 }

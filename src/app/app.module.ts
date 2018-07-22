@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 
 // ************* ngModel *************
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppComponent } from './app.component';
@@ -18,8 +18,10 @@ import { UploadFormComponent } from './pages/upload-form/upload-form.component';
 import { UploadService } from './services/upload.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DownloadFormComponent } from './pages/download-form/download-form.component'; // Upload
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, Component }  from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, Component } from '@angular/core';
 import { LetrasComponent } from './pages/letras/letras.component';
+import { HosthotComponent } from './pages/hosthot/hosthot.component';
+import { ChangeBgColorDirective } from './directives/hosthot';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { LetrasComponent } from './pages/letras/letras.component';
     UploadFormComponent,
     DownloadFormComponent,
     LetrasComponent,
+    HosthotComponent,
+    ChangeBgColorDirective
   ],
   imports: [
     BrowserModule,

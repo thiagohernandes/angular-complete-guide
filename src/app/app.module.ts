@@ -22,6 +22,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, Component } from '@
 import { LetrasComponent } from './pages/letras/letras.component';
 import { HosthotComponent } from './pages/hosthot/hosthot.component';
 import { ChangeBgColorDirective } from './directives/hosthot';
+import { HoleDirective } from './directives/role';
+import { RoleDirectiveComponent } from './pages/role-directive/role-directive.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ChangeBgColorDirective } from './directives/hosthot';
     DownloadFormComponent,
     LetrasComponent,
     HosthotComponent,
-    ChangeBgColorDirective
+    ChangeBgColorDirective,
+    HoleDirective,
+    RoleDirectiveComponent
   ],
   imports: [
     BrowserModule,

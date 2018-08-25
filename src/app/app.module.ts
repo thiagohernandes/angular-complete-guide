@@ -24,6 +24,7 @@ import { HosthotComponent } from './pages/hosthot/hosthot.component';
 import { ChangeBgColorDirective } from './directives/hosthot';
 import { HoleDirective } from './directives/role';
 import { RoleDirectiveComponent } from './pages/role-directive/role-directive.component';
+import { ClassesComponent } from './classes/classes.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { RoleDirectiveComponent } from './pages/role-directive/role-directive.co
     HosthotComponent,
     ChangeBgColorDirective,
     HoleDirective,
-    RoleDirectiveComponent
+    RoleDirectiveComponent,
+    ClassesComponent
   ],
   imports: [
     BrowserModule,

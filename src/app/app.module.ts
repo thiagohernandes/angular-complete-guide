@@ -25,6 +25,8 @@ import { ChangeBgColorDirective } from './directives/hosthot';
 import { HoleDirective } from './directives/role';
 import { RoleDirectiveComponent } from './pages/role-directive/role-directive.component';
 import { ClassesComponent } from './classes/classes.component';
+import { FilterTimesPipe } from './pipes/filter-times.pipe';
+import { TimesComponent } from './times/times/times.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { ClassesComponent } from './classes/classes.component';
     ChangeBgColorDirective,
     HoleDirective,
     RoleDirectiveComponent,
-    ClassesComponent
+    ClassesComponent,
+    FilterTimesPipe,
+    TimesComponent
   ],
   imports: [
     BrowserModule,
